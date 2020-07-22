@@ -1,4 +1,4 @@
-rounds = int(input("How many rounds? "))    # check with integer checker in due course
+rounds = int(input("How many rounds? "))    # asks how many rounds 
 rounds_played = 0
 
 while rounds_played < rounds:

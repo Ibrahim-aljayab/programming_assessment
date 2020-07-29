@@ -1,2 +1,2 @@
 language = "python3"
-run = "python 03_ask_user_question.py"
+run = "python 04_component.py"

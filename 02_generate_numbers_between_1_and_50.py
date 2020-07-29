@@ -1,4 +1,6 @@
 import random
-#Generate 2 random numbers between 10 and 30
-randomlist = random.sample(range(1, 50), 2)
-print(randomlist)
+num_1 = random.randint(0,50) 
+print(num_1)
+import random
+num_2 = random.randint(0,50) 
+print(num_2)

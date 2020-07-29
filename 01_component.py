@@ -33,6 +33,7 @@ def intcheck(question, low=None, high=None):
 
         except ValueError:
             print(error)
+    
             continue
 
 rounds = intcheck("How many rounds? ", 1)    # asks how many rounds 

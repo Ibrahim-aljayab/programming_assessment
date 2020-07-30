@@ -1,4 +1,4 @@
-# HL component 6 - Statement Generator
+# component 6 - Statement Generator
 def hl_statement(statement, char):
     print()
     print(char*len(statement))

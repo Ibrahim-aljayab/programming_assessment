@@ -48,9 +48,9 @@ rounds = intcheck("How many rounds? ", 1)    # asks how many rounds
 rounds_played = 0
 
 while rounds_played < rounds:
-  rounds_statement = "Rounds {}".format(rounds_played)
+  rounds_statement = "Rounds {}".format(rounds_played + 1)
   hl_statement(rounds_statement, "#")
-  rounds_played += 1
+ 
 
   # asks question and compares with answer
 

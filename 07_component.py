@@ -44,19 +44,22 @@ def hl_statement(statement, char):
     print(char*len(statement))
     print
 
-rounds = intcheck("How many rounds? ", 1)    # asks how many rounds 
-rounds_played = 0
+rounds = intcheck("How many rounds? ")    # asks how many rounds 
+#rounds_played = 0
 
-while rounds_played < rounds:
-  rounds_statement = "Rounds {}".format(rounds_played + 1)
+def creat_list(n):
+  global list1
+  list1 = [n+1 for i in n]
+  print(list1)
+
+for x in range(rounds):
+  rounds_statement = "Rounds {}".format(x+1)
   hl_statement(rounds_statement, "#")
  
-
   # asks question and compares with answer
-
   num_1 = random.randint(0,50)
-  import random
   num_2 = random.randint(0,50)
+  #ran the postion of num_2 & num_1 in the format stam.
   question = input("fill in the missing sign {} _ {}: ".format(num_1, num_2))
   if num_1 > num_2 and question == '>':
     hl_statement ("correct", "#")
@@ -64,6 +67,9 @@ while rounds_played < rounds:
     hl_statement("correct", "#")
   elif num_1 == num_2 and question == "=":
     hl_statement("correct", "#")
+
+  elif rounds == x:
+    exit()
 
   else:
     hl_statement("wrong","#")

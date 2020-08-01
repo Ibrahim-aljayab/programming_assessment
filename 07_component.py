@@ -52,6 +52,8 @@ def creat_list(n):
   list1 = [n+1 for i in n]
   print(list1)
 
+k=0
+
 for x in range(rounds):
   rounds_statement = "Rounds {}".format(x+1)
   hl_statement(rounds_statement, "#")
@@ -68,12 +70,13 @@ for x in range(rounds):
   elif num_1 == num_2 and question == "=":
     hl_statement("correct", "#")
 
-  elif rounds == x:
-    exit()
-
   else:
     hl_statement("wrong","#")
+    k= k+1
 
+print("")
+print("you got ",x+1-k,"correct"," and you got ",k," wrong ")
+  
 
 
 

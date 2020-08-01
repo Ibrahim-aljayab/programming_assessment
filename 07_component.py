@@ -74,8 +74,14 @@ for x in range(rounds):
     hl_statement("wrong","#")
     k= k+1
 
-print("")
-print("you got ",x+1-k,"correct"," and you got ",k," wrong ")
+d=x+1
+
+if x < k:
+  print("you suck")
+if k < d:
+  print("you are super")  
+
+print("you got ",d-k,"correct"," and you got ",k," wrong ")
   
 
 

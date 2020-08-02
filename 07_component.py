@@ -45,7 +45,7 @@ def hl_statement(statement, char):
     print
 
 rounds = intcheck("How many rounds? ")    # asks how many rounds 
-#rounds_played = 0
+
 
 def creat_list(n):
   global list1
@@ -61,7 +61,6 @@ for x in range(rounds):
   # asks question and compares with answer
   num_1 = random.randint(0,50)
   num_2 = random.randint(0,50)
-  #ran the postion of num_2 & num_1 in the format stam.
   question = input("fill in the missing sign {} _ {}: ".format(num_1, num_2))
   if num_1 > num_2 and question == '>':
     hl_statement ("correct", "#")
@@ -76,10 +75,6 @@ for x in range(rounds):
 
 d=x+1
 
-if x < k:
-  print("you suck")
-if k < d:
-  print("you are super")  
 
 print("you got ",d-k,"correct"," and you got ",k," wrong ")
   

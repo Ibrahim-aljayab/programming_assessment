@@ -74,8 +74,8 @@ for x in range(rounds):
     k= k+1
 
 d=x+1
-
-
+# game stats
+hl_statement("game history", "*")
 print("you got ",d-k,"correct"," and you got ",k," wrong ")
   
 

@@ -36,7 +36,7 @@ def intcheck(question, low=None, high=None):
             print(error)
             continue
 
-
+# game history list
 won = 0
 lost = 0
 
@@ -60,7 +60,7 @@ def creat_list(n):
   print(list1)
 
 
-
+# loop
 for x in range(rounds ):
   rounds_statement = "Rounds {}".format(x+1)
   hl_statement(rounds_statement, "#")
@@ -74,7 +74,7 @@ for x in range(rounds ):
  # generates question
   question = input("fill in the missing sign {} _ {}: ".format(num_1, num_2))
 
- # checks if question is right or wrong
+ # checks if input is correct or wrong
   if num_1 > num_2 and question == '>':
     feedback = "correct"
     hl_statement (feedback, "#")
@@ -100,7 +100,7 @@ for x in range(rounds ):
   game_history.append(round_result)
 
 
-
+# prints game history results
 print()
 print("**** Results ****")
 

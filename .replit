@@ -1,2 +1,2 @@
 language = "python3"
-run = "python 07_component.py"
+run = "python 08_component.py"
